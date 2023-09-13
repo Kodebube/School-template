@@ -1,0 +1,643 @@
+/* Header */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header {
+    /* rgb(243, 169, 73) */
+    background-color: rgb(165, 164, 164);
+    min-height: 100vh;
+}
+
+header .info {
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+header #logo {
+    width: auto;
+    height: 100px;
+}
+header .info .location {
+    display: flex;
+    margin-left: 52px;
+    margin-top: 22px;
+    float: right;
+}
+header .info .fa {
+    font-size: 40px;
+}
+.fa-clock-o {
+    color: red;
+}
+.fa-map-marker {
+    color: orange;
+}
+header .info p {
+    margin-left: 10px;
+}
+
+header .menu {
+    background-color: white;
+    margin: 50px 100px;
+    border-radius: 50px;
+    display: flex;
+    height: 90px;
+}
+#showmenu {
+    display: none;
+}
+header .menu ul {
+    list-style-type: none;
+    display: flex;
+    padding-top: 34px;
+}
+header .menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 24px;
+}
+header .menu ul li a:hover, #active {
+    color: red;
+    transition: .4s ease all;
+}
+
+header .medialink {
+    margin-left: 430px;
+}
+header .medialink i {
+    opacity: .4;
+}
+.fa-facebook, .fa-twitter, .fa-linkedin {
+    color: skyblue;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-instagram:hover {
+    opacity: 1;
+}
+.fa-instagram {
+    color: orangered;
+}
+
+header .top-text {
+    margin: 90px 105px;
+}
+header .top-text h5 {
+    font-family: cursive;
+    color: red;
+    font-weight: 100;
+}
+header .top-text h1 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+header .top-text h3 {
+    margin-bottom: 60px;
+}
+header .top-text a {
+    font-family: monospace;
+    background-color: darkred;
+    text-decoration: none;
+    padding: 30px 35px;
+    color: white;
+    border-radius: 50px 0 50px 0;
+}
+header .top-text a:hover {
+    background-color: rgb(231, 5, 5);
+    transition: .8s ease;
+}
+header .top-text a:active {
+    background-color: yellow;
+    color: black;
+}
+
+header #top-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/*features*/
+.features {
+    margin: 80px;
+    position: relative;
+    display: block;
+}
+.features .box1, .features .box2, .features .box3 {
+    float: left;
+    margin: 15px 19px;
+    width: 350px;
+    height: 250px;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.features .box1 {
+    background-color: red;
+}
+.features .box2 {
+    background-color: orange;
+}
+.features .box3 {
+    background-color: cadetblue;
+}
+.features .box1 i, .features .box2 i, .features .box3 i {
+    font-size: 43px;
+    padding-top: 20px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: -50px;
+}
+.features .box1 i {
+    background-color: #ff0000;
+}
+.features .box2 i {
+    background-color: orange;
+}
+.features .box3 i {
+    background-color: cadetblue;
+}
+.features .box1:hover, .features .box2:hover, .features .box3:hover {
+    box-shadow: 0 0 20px 0 black;
+}
+.features h1 {
+    margin-top: 19px;
+    margin-bottom: 9px;
+    font-size: 19px;
+    padding: 6px;
+}
+.features p {
+    padding: 10px 15px;
+}
+#pdown {
+    font-size: 60px;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    animation: bop 2s 1s infinite;
+}
+@keyframes bop {
+    0% {
+        top: 300px;
+    }
+    50% {
+        top: 320px
+    }
+}
+#hadto {
+    color: orangered;
+    font-family: cursive;
+    font-size: 1em;
+    margin-left: 80%;
+    animation-name: bling;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes bling {
+    25% {
+        color: orangered;
+    }
+    50% {
+        color: red;
+    }
+    75% {
+        color: orange;
+        }
+    100% {
+        color: cadetblue;
+        }
+}
+
+
+
+/* about */
+.about {
+    background-color: gainsboro;
+}
+.about img {
+    width: 90vh;
+    height: 75vh;
+    margin: 130px 40px;
+}
+.abt-text {
+    width: 450px;
+    float: right;
+    margin: 130px 100px 0 0;
+}
+.abt-text h3 {
+    font-family: cursive;
+    font-weight: 100;
+    margin-bottom: 4px;
+    color: red;
+}
+.abt-text h1 {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.abt-text p {
+    color: rgb(54, 50, 50);
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 70px;
+    font-family: sans-serif;
+}
+.abt-text a {
+    font-family: monospace;
+    background-color: darkblue;
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+    border-radius: 50px 0 50px 0;
+}
+.abt-text a:hover {
+    background-color: rgb(78, 78, 212);
+    transition: .8s ease;
+}
+.abt-text a:active {
+    background-color: yellow;
+    color: black;
+}
+
+
+
+/* perks */
+.perks {
+    background-color: rgb(79, 107, 160);/*cornflowerblue*/
+    text-align: center;
+    padding: 120px 105px;
+    min-height: 130vh;
+}
+.perks h4 {
+    font-family: cursive;
+    font-weight: 100;
+    margin-bottom: 13px;
+    color: red;
+}
+.perks h1 {
+    font-family: sans-serif;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+.perks .perkk {
+    background-color: white;
+    width: 350px;
+    height: 510px;
+    float: left;
+    margin: 20px 14px;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+.perks .perkk img {
+    width: 130px;
+    margin: 20px 110px;
+}
+#th {
+    width: 250px;
+    margin: 9px 55px;
+}
+.perks .perkk h2{
+    font-weight: 100;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.perks .perkk #blu{
+    color: skyblue;
+}
+.perks .perkk #gre{
+    color: lightgreen;
+}
+.perks .perkk #re{
+    color: red;
+}
+.perks .perkk p{
+    color: rgb(54, 50, 50);
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+.perks .perkk a {
+    font-family: monospace;
+    text-decoration: none;
+    padding: 17px 25px;
+    color: white;
+    border-radius: 50px 0 50px 0;
+}
+.perks .perkk .red {
+    background: red;
+}
+.perks .perkk .orange {
+    background: orange;
+}
+.perks .perkk .blue {
+    background: cadetblue;
+}
+.perks .perkk .red:hover {
+    background-color: rgb(199, 39, 39);
+    transition: .8s ease;
+}
+.perks .perkk .orange:hover {
+    background-color: rgb(189, 139, 47);
+    transition: .8s ease;
+}
+.perks .perkk .blue:hover {
+    background-color: rgb(76, 106, 107);
+    transition: .8s ease;
+}
+
+
+
+/* pricing */
+.pricing {
+    margin: 100px 50px;
+    display: flex;
+}
+.ptlk {
+    width: 440px;
+    font-family: sans-serif;
+}
+.ptlk h4 {
+    font-family: cursive;
+    font-weight: 100;
+    color: red;
+    margin-bottom: 8px;
+}
+.ptlk h1 {
+    font-weight: 100;
+    margin-bottom: 19px;
+}
+.ptlk p {
+    line-height: 26px;
+}
+.ptlk a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ptlk a:hover {
+    border: 1px dotted;
+}
+.pack1, .pack2, .pack3 {
+    padding: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+.pack1 .num, .pack2 .num, .pack3 .num {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.pack1 .num {
+    background-color: red;
+}
+.pack2 .num {
+    background-color: cyan;
+}
+.pack3 .num {
+    background-color: orange;
+}
+.pack1 .num span, .pack2 .num span, .pack3 .num span {
+    font-size: 2em;
+    border: 3.5px white solid;
+    padding: 28px 15px;
+    border-radius: 50%;
+    display: block;
+}
+.pack1 h2, .pack2 h2, .pack3 h2 {
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+.pack1 p, .pack2 p, .pack3 p {
+    font-family: sans-serif;
+    line-height: 30px;
+}
+.fa-check {
+    margin-right: 7px;
+}
+.pack1 .fa-check {
+    color: red;
+}
+.pack2 .fa-check {
+    color: cyan;
+}
+.pack3 .fa-check {
+    color: orange;
+}
+.pack1 a, .pack2 a, .pack3 a {
+    font-family: monospace;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border-radius: 50px 0 50px 0;
+    margin-top: 70px;
+    display: block;
+    width: 160px;
+    text-align: center;
+}
+.pack1 a {
+    background-color: red;
+}
+.pack2 a {
+    background-color: cyan;
+}
+.pack3 a {
+    background-color: orange;
+}
+.pack1 a:hover, .pack2 a:hover, .pack3 a:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 1px double;
+    transition: .8s ease;
+}
+
+
+.testimonials {
+    min-height: 110vh;
+    background: gainsboro;
+    padding: 100px;
+    text-align: center;
+}
+.testimonials h4 {
+    font-family: cursive;
+    font-weight: 100;
+    margin-top: 10px;
+}
+.testimonials h1 {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.testi-slide {
+    background-color: rgba(255, 0, 0, 0.75);
+    height: 40vh;
+    margin-left: 15%;
+    color: white;
+    width: 70%;
+    padding: 20px;
+}
+.testi-slide .testimonee {
+    margin: 10px;
+    display: flex;
+    font-family: sans-serif;
+}
+.testi-slide .testimonee img {
+    height: 100px;
+    width: 100px;
+}
+.testi-slide .testimonee .nf {
+    margin: 0 40px;
+    text-align: left;
+}
+.testimonee .nf h2 {
+    font-family: sans-serif;
+    margin-bottom: 14px;
+    font-weight: 300;
+}
+.testimonee .nf #ivi {
+    opacity: .7;
+}
+.testimonee .nf p {
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 22px;
+}
+.testi-slide .find {
+    display: flex;
+}
+.testi-slide .find i {
+    margin-left: 5px;
+    font-size: 10px;
+    opacity: .5;
+    transition: 1s ease all;
+}
+
+
+/* enroll */
+.enroll {
+    background-color: gold;
+    padding: 20px;
+    color: white;
+    display: flex;
+}
+.enroll h1 {
+    font-weight: 200;
+    margin: 25px;
+}
+.enroll a {
+    font-family: monospace;
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(199, 39, 39);
+    text-decoration: none;
+    margin: 19px;
+    padding: 16px;
+    color: white;
+    border-radius: 50px 0 50px 0;
+    float: none;
+    margin-left: 400px;
+}
+.enroll a:hover {
+    background-color: red;
+    transition: .8s ease;
+}
+.enroll a:active {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* footer */
+footer {
+    min-height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    padding: 100px;
+    font-family: sans-serif;
+}
+footer .morenews {
+    min-height: 40vh;
+    width: 60vh;
+}
+footer .morenews h3 {
+    font-family: cursive;
+    font-weight: 100;
+    color: red;
+    margin: 20px 0;
+}
+footer .morenews p {
+    font-size: 17px;
+    margin-bottom: 7px;
+    line-height: 27px;
+}
+footer .morenews i {
+    color: white;
+}
+#newz {
+    margin-top: 45px;
+}
+footer .morenews #newz input {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 270px;
+    margin-right: 4px;
+}
+footer .morenews #newz button {
+    font-family: monospace;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 50px;
+    background: rgba(255, 0, 0, 0.829);
+    color: white;
+    border: none;
+}
+footer .morenews #newz button:hover {
+    background-color: rgb(117, 4, 4, 0.8);
+}
+footer ul {
+    list-style-type: none;
+}
+footer li {
+    margin-bottom: 17px;
+}
+footer ul li a {
+    color: white;
+    opacity: .5;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    opacity: 1;
+}
+footer .navs {
+    margin-left: 160px;
+    padding: 30px;
+}
+footer .navs h3 {
+    color: red;
+    margin-bottom: 30px;
+}
+
+/* end */
+#p {
+    text-align: center;
+    background: #333;
+    padding-top: 60px;
+    color: white;
+    font-family: sans-serif;
+    padding-bottom: 100px;
+    border-top: 1px solid white;
+    margin-bottom: 0;
+}
