@@ -46,7 +46,7 @@ header .menu {
     display: flex;
     height: 90px;
 }
-#showmenu {
+#showmenu, #hidemenu {
     display: none;
 }
 header .menu ul {
